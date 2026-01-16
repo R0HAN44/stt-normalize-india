@@ -1,6 +1,16 @@
-export function sum(a: number, b: number): number {
-    console.log(a+b)
-  return a + b;
+import { buildDictionary } from "./buildDictionary.js";
+import { MULTIPLIERS } from "./constants/multipliers.js";
+import { NUMBERS } from "./constants/numbers.js";
+
+
+function main() {
+  const dictionary = buildDictionary([
+    ...NUMBERS,
+    ...MULTIPLIERS
+  ]);
+console.log(
+dictionary.get("lakh"))
+  console.log(dictionary);
 }
 
-sum(1,5);
+main();

@@ -16,7 +16,8 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "rdev": "npx tsx src/index.ts"
   },
   "keywords": [],
   "author": "",
