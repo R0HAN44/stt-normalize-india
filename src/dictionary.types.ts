@@ -1,5 +1,7 @@
+import { TokenType } from "./core/types.js";
+
 export interface DictionaryEntry {
-    type: "NUMBER" | "MULTIPLIER";
+    type: TokenType;
     value: number;
     confidence: number;
 }

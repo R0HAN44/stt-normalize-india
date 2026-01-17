@@ -1,8 +1,9 @@
 export enum TokenType {
-    NUMBER = "NUMBER",
-    MULTIPLIER = "MULTIPLIER",
-    UNKNOWN = "UNKNOWN"
+  NUMBER = "NUMBER",
+  MULTIPLIER = "MULTIPLIER",
+  UNKNOWN = "UNKNOWN"
 }
+
 
 export interface Token {
     raw: string;

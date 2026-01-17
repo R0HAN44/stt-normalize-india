@@ -1,12 +1,15 @@
+import { TokenType } from "../core/types.js";
+
 export interface MultiplierEntry {
-    kind: "MULTIPLIER";
+    type: TokenType.MULTIPLIER;
     value: number;
     aliases: string[];
 }
 
 export const MULTIPLIERS: MultiplierEntry[] = [
-    { kind: "MULTIPLIER", value: 100, aliases: ["hundred"] },
-    { kind: "MULTIPLIER", value: 1_000, aliases: ["thousand", "hazaar"] },
-    { kind: "MULTIPLIER", value: 100_000, aliases: ["lakh", "lac"] },
-    { kind: "MULTIPLIER", value: 10_000_000, aliases: ["crore"] }
+    { type: TokenType.MULTIPLIER, value: 100, aliases: ["hundred"] },
+    { type: TokenType.MULTIPLIER, value: 1_000, aliases: ["thousand", "hazaar"] },
+    { type: TokenType.MULTIPLIER, value: 100_000, aliases: ["lakh", "lac"] },
+    { type: TokenType.MULTIPLIER, value: 10_000_000, aliases: ["crore"] }
 ];
+
