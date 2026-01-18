@@ -7,9 +7,8 @@ export interface MultiplierEntry {
 }
 
 export const MULTIPLIERS: MultiplierEntry[] = [
-    { type: TokenType.MULTIPLIER, value: 100, aliases: ["hundred"] },
-    { type: TokenType.MULTIPLIER, value: 1_000, aliases: ["thousand", "hazaar"] },
-    { type: TokenType.MULTIPLIER, value: 100_000, aliases: ["lakh", "lac"] },
-    { type: TokenType.MULTIPLIER, value: 10_000_000, aliases: ["crore"] }
+    { type: TokenType.MULTIPLIER, value: 100, aliases: ["hundred", "sau"] },
+    { type: TokenType.MULTIPLIER, value: 1_000, aliases: ["thousand", "hazaar", "hazar"] },
+    { type: TokenType.MULTIPLIER, value: 100_000, aliases: ["lakh", "lac", "lakhs"] },
+    { type: TokenType.MULTIPLIER, value: 10_000_000, aliases: ["crore", "crores"] }
 ];
-
