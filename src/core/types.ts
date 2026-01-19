@@ -11,6 +11,7 @@ export interface Token {
     type: TokenType;
     value?: number;
     confidence: number;
+    isGroup?: boolean;
 }
 
 export interface ScanResult {
@@ -29,4 +30,15 @@ export interface NormalizationResult {
 
 export enum ScannerState {
     DEFAULT = "DEFAULT"
+}
+
+export type NormalizationErrorCode =
+  | "UNKNOWN_TOKEN"
+  | "INVALID_GRAMMAR"
+  | "EMPTY_INPUT"
+  | "NO_NUMBER_FOUND";
+
+export interface NormalizationError {
+  code: NormalizationErrorCode;
+  message: string;
 }

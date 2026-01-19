@@ -44,7 +44,8 @@ export function scan(
                 normalized,
                 type: entry.type,
                 value: entry.value,
-                confidence: entry.confidence
+                confidence: entry.confidence,
+                isGroup : entry.isGroup
             });
         } else {
             tokens.push({

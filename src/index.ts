@@ -2,21 +2,24 @@ import { buildDictionary } from "./buildDictionary.js";
 import { MULTIPLIERS } from "./constants/multipliers.js";
 import { NUMBERS } from "./constants/numbers.js";
 import { runPipeline } from "./core/pipeline.js";
+import { NormalizationResult } from "./core/types.js";
 
-function main() {
+export function normalizeNumber(input : string) {
   const dictionary = buildDictionary([
     ...NUMBERS,
     ...MULTIPLIERS
   ]);
-  console.log(
-    dictionary.get("lakh"))
-  console.log(dictionary);
 
-  const result = runPipeline(
-    "one crore two lakh five",
+  const result : NormalizationResult = runPipeline(
+    input,
     dictionary
   );
-  console.log(JSON.stringify(result, null, 2));
+  
+  return {
+    output : result.output,
+    confidence : result.confidence,
+    error : result.error
+  }
 }
 
-main();
+normalizeNumber("one crore two lakh five");

@@ -18,7 +18,8 @@ export const buildDictionary = (entries: Entry[]) => {
             const dictEntry: DictionaryEntry = {
                 type: entry.type,
                 value: entry.value,
-                confidence: entry.type === "NUMBER" ? entry.confidenceWeight : 1.0
+                confidence: entry.type === "NUMBER" ? entry.confidenceWeight : 1.0,
+                isGroup: entry.type === "MULTIPLIER" ? entry.isGroup : false
             }
 
             dict.set(key, dictEntry);
