@@ -12,7 +12,9 @@ export const buildDictionary = (entries: Entry[]) => {
             const key = alias.toLowerCase();
 
             if (dict.has(key)) {
-                throw new Error(`Duplicate alias detected: "${key}"`);
+                // throw new Error(`Duplicate alias detected: "${key}"`);
+                console.warn(`Duplicate alias detected: "${key}"`)
+                continue;
             }
 
             const dictEntry: DictionaryEntry = {

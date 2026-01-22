@@ -45,7 +45,7 @@ export const NUMBERS: NumberEntry[] = [
     // 21-29
     { type: TokenType.NUMBER, value: 21, aliases: ["twenty one", "ikkees", "ikees", "ikis"], confidenceWeight: 0.95 },
     { type: TokenType.NUMBER, value: 22, aliases: ["twenty two", "baees", "bais", "bayees"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 23, aliases: ["twenty three", "tees", "teyees"], confidenceWeight: 0.95 },
+    { type: TokenType.NUMBER, value: 23, aliases: ["twenty three", "teyees", "teis"], confidenceWeight: 0.95 },
     { type: TokenType.NUMBER, value: 24, aliases: ["twenty four", "chaubees", "chobis"], confidenceWeight: 0.95 },
     { type: TokenType.NUMBER, value: 25, aliases: ["twenty five", "pachchees", "pachees", "pachis"], confidenceWeight: 0.95 },
     { type: TokenType.NUMBER, value: 26, aliases: ["twenty six", "chhabbees", "chabbis", "chabis"], confidenceWeight: 0.95 },
@@ -129,23 +129,4 @@ export const NUMBERS: NumberEntry[] = [
     { type: TokenType.NUMBER, value: 97, aliases: ["ninety seven", "sattaanve", "sattanway"], confidenceWeight: 0.95 },
     { type: TokenType.NUMBER, value: 98, aliases: ["ninety eight", "atthaanve", "atthanway"], confidenceWeight: 0.95 },
     { type: TokenType.NUMBER, value: 99, aliases: ["ninety nine", "ninyaanve", "ninyanway"], confidenceWeight: 0.95 },
-
-    // Hundreds (spoken forms)
-    { type: TokenType.NUMBER, value: 100, aliases: ["one hundred", "hundred", "ek sau", "sau"], confidenceWeight: 1.0 },
-    { type: TokenType.NUMBER, value: 200, aliases: ["two hundred", "do sau"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 300, aliases: ["three hundred", "teen sau"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 400, aliases: ["four hundred", "chaar sau"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 500, aliases: ["five hundred", "paanch sau"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 600, aliases: ["six hundred", "cheh sau"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 700, aliases: ["seven hundred", "saat sau"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 800, aliases: ["eight hundred", "aath sau"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 900, aliases: ["nine hundred", "nau sau"], confidenceWeight: 0.95 },
-
-    // Common spoken thousands
-    { type: TokenType.NUMBER, value: 1000, aliases: ["one thousand", "thousand", "ek hazaar"], confidenceWeight: 1.0 },
-    { type: TokenType.NUMBER, value: 2000, aliases: ["two thousand", "do hazaar"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 3000, aliases: ["three thousand", "teen hazaar"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 4000, aliases: ["four thousand", "chaar hazaar"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 5000, aliases: ["five thousand", "paanch hazaar"], confidenceWeight: 0.95 },
-    { type: TokenType.NUMBER, value: 10000, aliases: ["ten thousand", "das hazaar"], confidenceWeight: 0.95 },
 ];

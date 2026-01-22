@@ -8,12 +8,11 @@ export interface MultiplierEntry {
 }
 
 export const MULTIPLIERS: MultiplierEntry[] = [
-  // Basic multipliers
   {
     type: TokenType.MULTIPLIER,
     value: 100,
     isGroup: false,
-    aliases: ["hundred", "hundred", "sau", "so"]
+    aliases: ["hundred", "sau", "so"]
   },
   {
     type: TokenType.MULTIPLIER,
@@ -21,8 +20,6 @@ export const MULTIPLIERS: MultiplierEntry[] = [
     isGroup: true,
     aliases: ["thousand", "k", "hazaar", "hazar", "hazaaar", "hajar"]
   },
-
-  // Indian numbering system
   {
     type: TokenType.MULTIPLIER,
     value: 100_000,
@@ -34,18 +31,6 @@ export const MULTIPLIERS: MultiplierEntry[] = [
     value: 10_000_000,
     isGroup: true,
     aliases: ["crore", "crores", "karod", "karode", "karodh"]
-  },
-  {
-    type: TokenType.MULTIPLIER,
-    value: 1_000_000_000,
-    isGroup: true,
-    aliases: ["arab", "arb", "abraj", "billion"]
-  },
-  {
-    type: TokenType.MULTIPLIER,
-    value: 100_000_000_000,
-    isGroup: true,
-    aliases: ["kharab", "kharaab"]
   },
 
   // Western system (for code-switching)
