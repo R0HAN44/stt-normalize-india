@@ -20,8 +20,8 @@ export function runPipeline(
   matchers: Matcher[]
 ): NormalizationResult {
   const unicode = normalizeUnicode(input);
-  const cleaned = normalizeText(unicode);
-  const tokens = scan(cleaned, dictionary);
+  // const cleaned = normalizeText(unicode); //remove fillers etc
+  const tokens = scan(unicode, dictionary);
 
   const result = runMatchers(tokens, matchers);
 

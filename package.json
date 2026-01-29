@@ -1,5 +1,5 @@
 {
-  "name": "stt-normalize-india",
+  "name": "spoken-number-normalizer",
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -12,6 +12,9 @@
       "require": "./dist/index.cjs"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -19,8 +22,15 @@
     "test:watch": "vitest",
     "rdev": "npx tsx src/index.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "speech-to-text",
+    "normalization",
+    "number-parser",
+    "indian-numbers",
+    "nlp",
+    "streaming"
+  ],
+  "author": "Rohan J",
   "license": "ISC",
   "description": "",
   "devDependencies": {
